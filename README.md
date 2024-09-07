@@ -2,8 +2,7 @@ CoffeeShopDomain
 CoffeeShopDomain is a Python-based project designed to model a basic coffee shop domain, where customers can place orders for different types of coffee. The system models the interactions between Customers, Coffees, and Orders, while including essential data validations and relationships between these entities.
 
 Project Structure
-bash
-Copy code
+
 CoffeeShopDomain/
 │
 ├── coffee/
@@ -48,7 +47,6 @@ __str__(self): Returns a string representation of the coffee (name of the coffee
 
 Example Usage:
 python
-Copy code
 from coffee.coffee import Coffee
 
 espresso = Coffee("Espresso")
@@ -75,7 +73,6 @@ __str__(self): Returns a string representation of the customer (name of the cust
 
 Example Usage:
 python
-Copy code
 from customer.customer import Customer
 
 john = Customer("John Doe")
@@ -96,7 +93,6 @@ __str__(self): Returns a string representation of the order, including customer,
 
 Example Usage:
 python
-Copy code
 from customer.customer import Customer
 from coffee.coffee import Coffee
 from order.order import Order
@@ -112,7 +108,6 @@ Key Function:
 validate_name(name: str, min_length: int, max_length: int): Validates that the name is a string and its length is between min_length and max_length. Raises a ValueError if the validation fails.
 Example Usage:
 python
-Copy code
 from utils.validation import validate_name
 
 validate_name("Cappuccino", 3, 50)  # This will pass
